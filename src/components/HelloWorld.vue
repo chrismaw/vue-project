@@ -1,14 +1,14 @@
 <template>
     <div class="home">
         <div class="bg-white text-dark row py-0 py-md-5 mx-0">
-            <div class="col-12 col-md-6 p-0 text-center view overlay" style="min-height: 315px">
-                <img class="img-fluid mx-auto shadow" src="/src/assets/staff.jpg"/>
+            <div class="col-12 col-md-6 p-0 text-center view overlay" style="min-height: 200px">
+                <img class="img-fluid mx-auto shadow" :src="imageStaff"/>
                 <div class="mask flex-center waves-effect waves-light">
                     <p class="white-text">Our Staff</p>
                 </div>
                 <p id="welcome-text">Welcome to the&nbsp;office&nbsp;of William&nbsp;J.&nbsp;Coco,&nbsp;DDS, MAGD</p>
             </div>
-            <div class="col-12 col-md-6 p-0 text-center" style="min-height: 315px">
+            <div class="col-12 col-md-6 py-0" style="min-height: 200px">
                 <div class="text-center">
                     {{ msg }}
                 </div>
@@ -37,6 +37,11 @@ export default {
     return {
       msg: 'We offer a wide array of preventative, restorative and cosmetic services to improve your oral health. Our team is dedicated to providing you the friendly and personalized dental care that you and your family deserve.'
     }
+  },
+  computed: {
+    imageStaff () {
+      return '/static/staff.jpg'
+    }
   }
 }
 </script>
@@ -49,7 +54,7 @@ export default {
     }
 
     #welcome-text {
-        font-size: 4vw;
-        font-weight: 300;
+        font-size: 7vw;
+        font-weight: 400;
     }
 </style>

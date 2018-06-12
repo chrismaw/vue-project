@@ -1,6 +1,7 @@
 <template>
     <div id="app">
-        <nav class="navbar fixed-top navbar-expand-md navbar-light white scrolling-navbar">
+        <div class="container"><span class="mr-auto"><a class="text-primary"><i class="fas fa-phone"></i>&nbsp;252-355-7178</a></span></div>
+        <nav class="navbar sticky-top navbar-expand-md navbar-light white scrolling-navbar">
             <div class="container">
                 <!-- Brand -->
                 <router-link class="navbar-brand waves-effect p-1" style="position: absolute;" to="">
@@ -28,7 +29,6 @@
                 </div>
             </div>
         </nav>
-        <img src="./assets/logo.png">
         <router-view/>
     </div>
 </template>
@@ -47,7 +47,7 @@ export default {
         text-align: center;
     }
     body {
-        padding-top: 54px;
+        /*padding-top: 54px;*/
     }
     .full-width{
         width:100%;

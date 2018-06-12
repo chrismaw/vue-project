@@ -11,8 +11,8 @@ import 'mdbootstrap/css/mdb.min.css'
 
 Vue.config.productionTip = false
 
-let img = document.createElement('img')
-img.src = require('./')
+// let img = document.createElement('img')
+// img.src = require('./')
 
 /* eslint-disable no-new */
 new Vue({
