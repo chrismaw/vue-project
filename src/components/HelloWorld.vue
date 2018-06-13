@@ -1,11 +1,11 @@
 <template>
     <div class="home">
         <div class="text-dark row py-0 py-md-5 mx-0">
-            <div class="col-12 col-md-6 p-0 text-center view overlay" style="min-height: 130px">
-                <img class="img-fluid mx-auto shadow" :src="imageStaff"/>
-                <div class="mask flex-center waves-effect waves-light">
-                    <p class="white-text">Our Staff</p>
-                </div>
+            <div class="col-12 col-md-6 p-0 text-center" style="min-height: 130px">
+                <img v-parallax="0" class="img-fluid mx-auto shadow" :src="imageStaff"/>
+                <!--<div class="mask flex-center waves-effect waves-light">-->
+                    <!--<p class="white-text">Our Staff</p>-->
+                <!--</div>-->
                 <p id="welcome-text" class="serif my-2">Welcome to the&nbsp;office&nbsp;of William&nbsp;J.&nbsp;Coco,&nbsp;DDS, MAGD</p>
             </div>
             <div class="d-md-none w-75 mx-auto" style="border: solid 1px black"></div>
