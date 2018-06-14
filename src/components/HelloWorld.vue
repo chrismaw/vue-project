@@ -11,14 +11,22 @@
             </div>
             <div class="d-md-none w-75 mx-auto" style="border: solid 1px black"></div>
             <div id="welcome-msg" class="col-12 col-md-6 py-3 py-md-0 px-md-5 text-center my-2 my-md-0">
-                <div class="d-none d-md-block welcome-text serif my-2 my-md-0" style="font-size: 5vw">Welcome</div>
+                <div class="d-none d-md-block welcome-text serif my-2 my-md-0">Welcome</div>
                 <div class="d-none d-md-block w-75 mx-auto mb-3" style="border: solid 1px black"></div>
                 <span class="align-middle lead">{{ welcomeMsg }}</span>
+                <div class="d-sm-none mt-4">
+                    <router-link to="" class="btn btn-outline-elegant btn-block py-1 mt-2">Services</router-link>
+                    <router-link to="" class="btn btn-outline-elegant btn-block py-1 mt-2">Testimonials</router-link>
+                </div>
+                <div class="d-none d-sm-block d-md-none mt-4">
+                    <router-link to="" class="btn btn-outline-elegant" style="min-width: 160px">Services</router-link>
+                    <router-link to="" class="btn btn-outline-elegant" style="min-width: 160px">Testimonials</router-link>
+                </div>
             </div>
         </div>
         <div id="getintouch" style="background-color: #F9F9F9" class="text-dark row py-0 py-md-5 mx-0">
             <div class="col-12 col-md-6 p-0" style="min-height: 130px">
-                <div class="serif text-center mt-md-0 my-2 pt-3 pt-md-0" style="font-size: 5vw">GET IN TOUCH</div>
+                <div class="serif lead text-center mt-md-0 my-2 pt-3 pt-md-0">GET IN TOUCH</div>
                 <div class="d-md-none w-25 mb-3 mx-auto" style="border: solid 1px black"></div>
                 <div class="d-none d-md-block w-50 mb-3 mx-auto" style="border: solid 1px black"></div>
 
@@ -43,7 +51,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 p-0">
-                <div class="embed-responsive embed-responsive-1by1 mx-auto shadow">
+                <div id="google-map" class="embed-responsive embed-responsive-1by1 mx-auto shadow">
                     <iframe class="embed-responsive-item" style=""
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.3161577080405!2d-77.3445332202819!3d35.579932783701764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89aedd71b55fe63f%3A0xcbc3538a485074ed!2s2725+E+14th+St%2C+Greenville%2C+NC+27858!5e0!3m2!1sen!2sus!4v1470882936894"
                             frameborder="0" allowfullscreen="allowfullscreen"></iframe>
@@ -80,5 +88,9 @@ export default {
         background-position-x: left;
         background-position-y: bottom;
         /*background-size: 50%;*/
+    }
+    #google-map{
+        max-height: 500px;
+        max-width: 500px;
     }
 </style>

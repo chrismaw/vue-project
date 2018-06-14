@@ -74,10 +74,16 @@ export default {
         font-size: 6vw;
         /*font-weight: 600;*/
     }
+    #getintouch > div > div.serif{
+        font-size: 6vw;
+    }
 
     @media (min-width: 576px) {
         #info-header {
             font-size: 3vw;
+        }
+        #getintouch > div > div.serif{
+            font-size: 5vw;
         }
     }
 
@@ -88,6 +94,12 @@ export default {
         .welcome-text {
             font-size: 3vw;
             /*font-weight: 600;*/
+        }
+        #getintouch > div > div.serif{
+            font-size: 4vw;
+        }
+        #welcome-msg > div.serif {
+            font-size: 4vw;
         }
     }
 
