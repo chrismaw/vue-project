@@ -7,7 +7,6 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import 'mdbootstrap/js/mdb.min.js'
 import 'mdbootstrap/css/mdb.min.css'
-import VueParallaxJs from 'vue-parallax-js'
 
 Vue.config.productionTip = false
 
@@ -16,7 +15,6 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 
-Vue.use(VueParallaxJs)
 new Vue({
   el: '#app',
   router,

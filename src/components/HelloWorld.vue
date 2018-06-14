@@ -2,23 +2,45 @@
     <div class="home">
         <div class="text-dark row py-0 py-md-5 mx-0">
             <div class="col-12 col-md-6 p-0 text-center" style="min-height: 130px">
-                <img v-parallax="0" class="img-fluid mx-auto shadow" :src="imageStaff"/>
+                <img class="img-fluid mx-auto shadow" :src="imageStaff"/>
                 <!--<div class="mask flex-center waves-effect waves-light">-->
                     <!--<p class="white-text">Our Staff</p>-->
                 <!--</div>-->
-                <p id="welcome-text" class="serif my-2">Welcome to the&nbsp;office&nbsp;of William&nbsp;J.&nbsp;Coco,&nbsp;DDS, MAGD</p>
+                <p class="d-md-none welcome-text serif my-2">Welcome to the&nbsp;office&nbsp;of William&nbsp;J.&nbsp;Coco,&nbsp;DDS, MAGD</p>
+                <p class="d-none d-md-block welcome-text serif my-2">William&nbsp;J.&nbsp;Coco,&nbsp;DDS, MAGD</p>
             </div>
             <div class="d-md-none w-75 mx-auto" style="border: solid 1px black"></div>
-            <div id="welcome-msg" class="col-12 col-md-6 py-0">
-                <div class="text-center my-2">
-                    {{ welcomeMsg }}
-                </div>
+            <div id="welcome-msg" class="col-12 col-md-6 py-3 py-md-0 px-md-5 text-center my-2 my-md-0">
+                <div class="d-none d-md-block welcome-text serif my-2 my-md-0" style="font-size: 5vw">Welcome</div>
+                <div class="d-none d-md-block w-75 mx-auto mb-3" style="border: solid 1px black"></div>
+                <span class="align-middle lead">{{ welcomeMsg }}</span>
             </div>
         </div>
-        <div style="background-color: #fff" class="text-dark row py-0 py-md-5 mx-0">
-            <div class="col-12 col-md-6 p-0 text-center" style="min-height: 130px">
-                <div class="serif text-center my-3" style="font-size: 5vw">GET IN TOUCH</div>
-                <div class="text-center">We meet at 9AM and 11AM every Sunday</div>
+        <div id="getintouch" style="background-color: #F9F9F9" class="text-dark row py-0 py-md-5 mx-0">
+            <div class="col-12 col-md-6 p-0" style="min-height: 130px">
+                <div class="serif text-center mt-md-0 my-2 pt-3 pt-md-0" style="font-size: 5vw">GET IN TOUCH</div>
+                <div class="d-md-none w-25 mb-3 mx-auto" style="border: solid 1px black"></div>
+                <div class="d-none d-md-block w-50 mb-3 mx-auto" style="border: solid 1px black"></div>
+
+                <div class="row container-fluid mx-0 mb-3 text-center">
+                    <div id="phone" class="col-12 col-sm-6">
+                        <span style="text-decoration: underline">Phone:</span><br>
+                        <span>252-355-7178</span><br>
+                        <p class=""></p>
+                        <span style="text-decoration: underline">Address:</span><br>
+                        <span>500 Red Banks Rd. Ste A<br>
+                            Greenville, NC 27858</span>
+                        <p class="d-sm-none"></p>
+                    </div>
+                    <div id="hours" class="col-12 col-sm-6">
+                        <span style="text-decoration: underline">Office Hours:</span><br>
+                        <span style="font-weight: 600;">M</span> 9:00am-5:00pm<br>
+                        <span style="font-weight: 600;">T</span> 8:30am-5:00pm<br>
+                        <span style="font-weight: 600;">W</span> 9:00am-5:00pm<br>
+                        <span style="font-weight: 600;">T</span> 8:30am-5:00pm<br>
+                        <span style="font-weight: 600;">F</span> 9:00am-2:00pm<br>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-md-6 p-0">
                 <div class="embed-responsive embed-responsive-1by1 mx-auto shadow">
@@ -49,16 +71,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    footer {
-        background-image: url('/src/assets/tools.png');
-        bottom: 0;
-    }
-
-    #welcome-text {
-        font-size: 6.5vw;
-        font-weight: 600;
-    }
     #welcome-msg {
-        min-height: auto;
+        min-height: 130px;
+    }
+    #getintouch{
+        background-image: url('/static/tools.png');
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: bottom;
+        /*background-size: 50%;*/
     }
 </style>

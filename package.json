@@ -16,7 +16,6 @@
     "mdbootstrap": "^4.5.4",
     "popper.js": "^1.14.3",
     "vue": "^2.5.2",
-    "vue-parallax-js": "^0.1.2",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

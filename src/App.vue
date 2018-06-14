@@ -5,7 +5,7 @@
             <div class="container">
                 <!-- Brand -->
                 <router-link class="navbar-brand waves-effect p-1" style="position: absolute;" to="">
-                    <img class="logo" src="./assets/logo-dark.png">
+                    <img class="logo" src="./assets/logo-white.png">
                 </router-link>
                 <!-- Collapse -->
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
@@ -30,6 +30,7 @@
             </div>
         </nav>
         <router-view/>
+        <!--<footer class=""></footer>-->
     </div>
 </template>
 
@@ -48,11 +49,16 @@ export default {
     }
     .serif {
         font-family: "Old Standard TT", serif;
-        /*text-transform: uppercase;*/
+        text-transform: uppercase;
         line-height: 1;
     }
     body {
         /*padding-top: 54px;*/
+    }
+    footer {
+        content: url("/static/tools.png");
+        /*background-image: url('/static/tools.png');*/
+        /*background-repeat: no-repeat;*/
     }
     .full-width{
         width:100%;
@@ -64,13 +70,25 @@ export default {
     .nav-item {
         font-size: 20px;
     }
+    .welcome-text {
+        font-size: 6vw;
+        /*font-weight: 600;*/
+    }
 
     @media (min-width: 576px) {
-
+        #info-header {
+            font-size: 3vw;
+        }
     }
 
     @media (min-width: 768px) {
-
+        #info-header {
+            font-size: 2vw;
+        }
+        .welcome-text {
+            font-size: 3vw;
+            /*font-weight: 600;*/
+        }
     }
 
     @media (min-width: 992px) {
