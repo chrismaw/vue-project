@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <div id="info-header" class="d-flex container" ><span class="d-flex mr-auto"><a class="text-primary"><i class="fas fa-phone"></i>&nbsp;252-355-7178</a></span><span class="d-flex"><a href=""><i class="fas fa-location-arrow"></i>&nbsp;500 Red Banks Rd Ste A</a></span></div>
+        <div id="info-header" class="d-flex d-md-none container" ><span class="d-flex mr-auto"><a class="text-primary"><i class="fas fa-phone"></i>&nbsp;252-355-7178</a></span><span class="d-flex"><a href=""><i class="fas fa-location-arrow"></i>&nbsp;500 Red Banks Rd Ste A</a></span></div>
         <nav style="background-color: #7690c1" class="navbar sticky-top navbar-expand-md navbar-dark scrolling-navbar">
             <div class="container">
                 <!-- Brand -->
@@ -42,13 +42,13 @@ export default {
 
 <style>
     #app {
-        font-family: 'Cabin', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
     }
     .serif {
-        font-family: "Old Standard TT", serif;
+        font-family: "Lora", serif;
         text-transform: uppercase;
         line-height: 1;
     }

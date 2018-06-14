@@ -15,18 +15,18 @@
                 <div class="d-none d-md-block w-75 mx-auto mb-3" style="border: solid 1px black"></div>
                 <span class="align-middle lead">{{ welcomeMsg }}</span>
                 <div class="d-sm-none mt-4">
-                    <router-link to="" class="btn btn-outline-elegant btn-block py-1 mt-2">Services</router-link>
+                    <router-link to="/services" class="btn btn-outline-elegant btn-block py-1 mt-2">Services</router-link>
                     <router-link to="" class="btn btn-outline-elegant btn-block py-1 mt-2">Testimonials</router-link>
                 </div>
                 <div class="d-none d-sm-block d-md-none mt-4">
-                    <router-link to="" class="btn btn-outline-elegant" style="min-width: 160px">Services</router-link>
+                    <router-link to="/services" class="btn btn-outline-elegant" style="min-width: 160px">Services</router-link>
                     <router-link to="" class="btn btn-outline-elegant" style="min-width: 160px">Testimonials</router-link>
                 </div>
             </div>
         </div>
         <div id="getintouch" style="background-color: #F9F9F9" class="text-dark row py-0 py-md-5 mx-0">
             <div class="col-12 col-md-6 p-0" style="min-height: 130px">
-                <div class="serif lead text-center mt-md-0 my-2 pt-3 pt-md-0">GET IN TOUCH</div>
+                <div class="serif text-center mt-md-0 my-2 pt-3 pt-md-0">GET IN TOUCH</div>
                 <div class="d-md-none w-25 mb-3 mx-auto" style="border: solid 1px black"></div>
                 <div class="d-none d-md-block w-50 mb-3 mx-auto" style="border: solid 1px black"></div>
 
