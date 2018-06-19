@@ -1,10 +1,10 @@
 <template>
     <div id="app">
-        <div id="info-header" class="d-flex d-md-none container" ><span class="d-flex mr-auto"><a class="text-primary"><i class="fas fa-phone"></i>&nbsp;252-355-7178</a></span><span class="d-flex"><a href=""><i class="fas fa-location-arrow"></i>&nbsp;500 Red Banks Rd Ste A</a></span></div>
+        <div id="info-header" class="d-flex d-md-none container-fluid"><span class="d-flex mr-auto"><a class="text-primary"><i class="fas fa-phone"></i>&nbsp;252-355-7178</a></span><span class="d-flex"><a href=""><i class="fas fa-location-arrow"></i>&nbsp;500 Red Banks Rd Ste A</a></span></div>
         <nav style="background-color: #7690c1" class="navbar sticky-top navbar-expand-md navbar-dark scrolling-navbar">
             <div class="container">
                 <!-- Brand -->
-                <router-link class="navbar-brand waves-effect p-1" style="position: absolute;" to="">
+                <router-link class="navbar-brand waves-effect p-1" style="position: absolute;" to="/">
                     <img class="logo" src="./assets/logo-white.png">
                 </router-link>
                 <!-- Collapse -->
@@ -17,19 +17,21 @@
                 <div class="collapse navbar-collapse text-right text-md-center" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item serif">
-                            <router-link class="nav-link waves-effect" to="">ABOUT</router-link>
+                            <router-link class="nav-link waves-effect" to="">About</router-link>
                         </li>
                         <li class="nav-item serif">
-                            <router-link class="nav-link waves-effect" to="">SERVICES</router-link>
+                            <router-link class="nav-link waves-effect" to="/services">Services</router-link>
                         </li>
                         <li class="nav-item serif">
-                            <router-link class="nav-link waves-effect" to="">CONTACT</router-link>
+                            <router-link class="nav-link waves-effect" to="">Contact</router-link>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <router-view/>
+        <transition name="fade" mode="out-in">
+            <router-view/>
+        </transition>
         <!--<footer class=""></footer>-->
     </div>
 </template>
@@ -42,16 +44,61 @@ export default {
 
 <style>
     #app {
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Raleway', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
+        color: #3B4861;
     }
     .serif {
-        font-family: "Lora", serif;
+        font-family: "Raleway", serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         text-transform: uppercase;
         line-height: 1;
+        letter-spacing: 1.4px;
+        /*font-weight: 600;*/
+        color: #1D2430;
     }
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity 1s ease;
+    }
+    .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+        /*transform: translateX(-100px);*/
+        opacity: 0
+    }
+    .fade-enter {
+        /*transform: translateX(100px);*/
+        opacity: 1
+    }
+    /*@keyframes fadein {*/
+        /*from { opacity: 0; }*/
+        /*to   { opacity: 1; }*/
+    /*}*/
+
+    /*!* Firefox < 16 *!*/
+    /*@-moz-keyframes fadein {*/
+        /*from { opacity: 0; }*/
+        /*to   { opacity: 1; }*/
+    /*}*/
+
+    /*!* Safari, Chrome and Opera > 12.1 *!*/
+    /*@-webkit-keyframes fadein {*/
+        /*from { opacity: 0; }*/
+        /*to   { opacity: 1; }*/
+    /*}*/
+
+    /*!* Internet Explorer *!*/
+    /*@-ms-keyframes fadein {*/
+        /*from { opacity: 0; }*/
+        /*to   { opacity: 1; }*/
+    /*}*/
+
+    /*!* Opera < 12.1 *!*/
+    /*@-o-keyframes fadein {*/
+        /*from { opacity: 0; }*/
+        /*to   { opacity: 1; }*/
+    /*}*/
     body {
         /*padding-top: 54px;*/
     }
@@ -71,7 +118,7 @@ export default {
         font-size: 20px;
     }
     .welcome-text {
-        font-size: 6vw;
+        font-size: 5.5vw;
         /*font-weight: 600;*/
     }
     #getintouch > div > div.serif{
@@ -100,6 +147,13 @@ export default {
         }
         #welcome-msg > div.serif {
             font-size: 4vw;
+        }
+        #getintouch{
+            background-image: url('/static/tools.png');
+            background-repeat: no-repeat;
+            background-position-x: left;
+            background-position-y: bottom;
+            /*background-size: 50%;*/
         }
     }
 
