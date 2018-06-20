@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <div id="info-header" class="d-flex d-md-none container-fluid"><span class="d-flex mr-auto"><a class="text-primary"><i class="fas fa-phone"></i>&nbsp;252-355-7178</a></span><span class="d-flex"><a href=""><i class="fas fa-location-arrow"></i>&nbsp;500 Red Banks Rd Ste A</a></span></div>
+        <div  style="background-color: #F9F9F9" id="info-header" class="d-flex d-md-none container-fluid"><span class="d-flex mr-auto"><a style="color:#1D2430"><i class="fas fa-phone"></i>&nbsp;252-355-7178</a></span><span class="d-flex"><a href="" style="color:#1D2430"><i class="fas fa-location-arrow"></i>&nbsp;500 Red Banks Rd Ste A</a></span></div>
         <nav style="background-color: #7690c1" class="navbar sticky-top navbar-expand-md navbar-dark scrolling-navbar">
             <div class="container">
                 <!-- Brand -->
@@ -61,7 +61,7 @@ export default {
         color: #1D2430;
     }
     .fade-enter-active, .fade-leave-active {
-        transition: opacity 1s ease;
+        transition: opacity .3s ease;
     }
     .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
         /*transform: translateX(-100px);*/
@@ -124,7 +124,9 @@ export default {
     #getintouch > div > div.serif{
         font-size: 6vw;
     }
-
+    #services > p.welcome-text.serif.my-2 {
+        font-size: 8vw;
+    }
     @media (min-width: 576px) {
         #info-header {
             font-size: 3vw;
@@ -148,6 +150,9 @@ export default {
         #welcome-msg > div.serif {
             font-size: 4vw;
         }
+        #services > p.welcome-text.serif.my-2 {
+            font-size: 4vw;
+        }
         #getintouch{
             background-image: url('/static/tools.png');
             background-repeat: no-repeat;
@@ -158,7 +163,6 @@ export default {
     }
 
     @media (min-width: 992px) {
-
     }
 
     @media (min-width: 1200px) {

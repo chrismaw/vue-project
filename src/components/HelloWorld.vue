@@ -60,8 +60,8 @@
                     <div id="hours" class="col-12 col-sm-6 text-center">
                         <span class="d-none d-md-block" style="text-decoration: underline">Office Hours:</span>
                         <div class="row">
-                            <div class="col-4 col-md-2 col-lg-4 px-1 text-right">
-                                <ul class="p-0 font-weight-bold">
+                            <div class="col-4 col-md-2 col-lg-4 pr-1 pl-5 pl-sm-1 ml-4 ml-sm-0 text-center">
+                                <ul class="p-0 pl-5 pl-sm-0 font-weight-bold">
                                     <li>M</li>
                                     <li>T</li>
                                     <li>W</li>
@@ -69,7 +69,7 @@
                                     <li>F</li>
                                 </ul>
                             </div>
-                            <div class="col-8 col-md-10 col-lg-8 pr-1 pl-4 text-left">
+                            <div class="col-6 col-md-10 col-lg-8 pr-1 text-left">
                                 <ul class="p-0">
                                 <li id="mon">9:00am-5:00pm</li>
                                 <li id="tue">8:30am-5:00pm</li>
