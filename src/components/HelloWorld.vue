@@ -19,11 +19,11 @@
                 <div class="d-none d-md-block w-75 mx-auto mb-3" style="border: solid 1px black"></div>
                 <span class="align-middle lead">{{ welcomeMsg }}</span>
                 <div class="d-sm-none mt-4">
-                    <router-link to="" class="btn btn-outline-elegant btn-block py-1 mt-2">Services</router-link>
+                    <router-link to="/services" class="btn btn-outline-elegant btn-block py-1 mt-2">Services</router-link>
                     <router-link to="" class="btn btn-outline-elegant btn-block py-1 mt-2">Testimonials</router-link>
                 </div>
                 <div class="d-none d-sm-block d-md-none mt-4">
-                    <router-link to="" class="btn btn-outline-elegant" style="min-width: 160px">Services</router-link>
+                    <router-link to="/services" class="btn btn-outline-elegant" style="min-width: 160px">Services</router-link>
                     <router-link to="" class="btn btn-outline-elegant" style="min-width: 160px">Testimonials</router-link>
                 </div>
             </div>

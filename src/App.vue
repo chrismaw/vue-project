@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <div  style="background-color: #F9F9F9" id="info-header" class="d-flex d-md-none container-fluid"><span class="d-flex mr-auto"><a style="color:#1D2430"><i class="fas fa-phone"></i>&nbsp;252-355-7178</a></span><span class="d-flex"><a href="" style="color:#1D2430"><i class="fas fa-location-arrow"></i>&nbsp;500 Red Banks Rd Ste A</a></span></div>
+        <div style="background-color: #F9F9F9" id="info-header" class="d-flex d-md-none container-fluid"><span class="d-flex mr-auto"><a style="color:#1D2430"><i class="fas fa-phone"></i>&nbsp;252-355-7178</a></span><span class="d-flex"><a href="" style="color:#1D2430"><i class="fas fa-location-arrow"></i>&nbsp;500 Red Banks Rd Ste A</a></span></div>
         <nav style="background-color: #7690c1" class="navbar sticky-top navbar-expand-md navbar-dark scrolling-navbar">
             <div class="container">
                 <!-- Brand -->
@@ -71,34 +71,6 @@ export default {
         /*transform: translateX(100px);*/
         opacity: 1
     }
-    /*@keyframes fadein {*/
-        /*from { opacity: 0; }*/
-        /*to   { opacity: 1; }*/
-    /*}*/
-
-    /*!* Firefox < 16 *!*/
-    /*@-moz-keyframes fadein {*/
-        /*from { opacity: 0; }*/
-        /*to   { opacity: 1; }*/
-    /*}*/
-
-    /*!* Safari, Chrome and Opera > 12.1 *!*/
-    /*@-webkit-keyframes fadein {*/
-        /*from { opacity: 0; }*/
-        /*to   { opacity: 1; }*/
-    /*}*/
-
-    /*!* Internet Explorer *!*/
-    /*@-ms-keyframes fadein {*/
-        /*from { opacity: 0; }*/
-        /*to   { opacity: 1; }*/
-    /*}*/
-
-    /*!* Opera < 12.1 *!*/
-    /*@-o-keyframes fadein {*/
-        /*from { opacity: 0; }*/
-        /*to   { opacity: 1; }*/
-    /*}*/
     body {
         /*padding-top: 54px;*/
     }
@@ -124,7 +96,7 @@ export default {
     #getintouch > div > div.serif{
         font-size: 6vw;
     }
-    #services > p.welcome-text.serif.my-2 {
+    #services > div.text-left.container > div > div.col-12.col-md-6 > p.serif {
         font-size: 8vw;
     }
     @media (min-width: 576px) {
@@ -150,7 +122,7 @@ export default {
         #welcome-msg > div.serif {
             font-size: 4vw;
         }
-        #services > p.welcome-text.serif.my-2 {
+        #services > div.text-left.container > div > div.col-12.col-md-6 > p.serif {
             font-size: 4vw;
         }
         #getintouch{
